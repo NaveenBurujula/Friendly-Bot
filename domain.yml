@@ -1,0 +1,132 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - gcet
+  - hours
+  - IT_HOD
+  - CSE_HOD
+  - number_college
+  - certification
+  - courses
+  - admission_process
+  - fee_structure
+  - governing_council
+  - hostel
+  - library
+  - canteen
+  - placement
+  - clubs
+  - fests
+  - transport_facilities
+  - ask_professor_details
+  - ask_student_details
+
+entities:
+  - professor_name
+  - student_name
+
+slots:
+  professor_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: professor_name
+  student_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: student_name
+
+actions:
+  - action_professor_details
+  - action_student_details
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_gcet:
+  - text: "Geethanjali college of Engineering and Technology , Located at Cheeryal(vill),medchal(dist),Hyderabad"
+
+  utter_hours:
+  - text: "The college hours are from 9 AM to 3:40 PM, Monday to Friday."
+
+  utter_IT_HOD:
+  - text: "The HOD of IT at GCET is Dr. Sreelaxmi."
+
+  utter_CSE_HOD:
+  - text: "The HOD of CSE at GCET is Dr. Sreelaxmi."
+
+  utter_number_college:
+  - text: "The contact number for GCET is +0 98663 08271."
+
+  utter_certification:
+  - text: "GCET offers certification programs in Data Science, Cybersecurity, AI,Python , Fullstack Development etc."
+
+  utter_courses:
+  - text: "GCET offers courses in Engineering, Science, and Management."
+
+  utter_admission_process:
+  - text: "The admission process involves an entrance exam EMCET. You can apply online through the ts.epass website. And there is an a other option you can directly join through the management seat."
+
+  utter_fee_structure:
+  - text: "The fee structure for GCET varies by course. Please visit our official website for detailed information."
+    image: "https://collegedunia.com/college/13548-geethanjali-college-of-engineering-and-technology-gcet-keesara-hyderabad/courses-fees"
+
+  utter_hostel:
+  - text: "GCET provides hostel facilities with fully furnished rooms, Wi-Fi, and dining services. Separate hostels are available for boys and girls with a fee of 105000/-"
+
+  utter_library:
+  - text: "The GCET library is open from 9 AM to 3:40 PM on weekdays and offers a vast collection of books, journals, and digital resources."
+
+  utter_canteen:
+  - text: "The college canteen at GCET serves a variety of meals and snacks from 9 AM to 4 PM. It offers both vegetarian and non-vegetarian options."
+
+  utter_placement:
+  - text: "GCET has a robust placement cell that coordinates with top companies for campus placements. Our placement rate is over 90%."
+    image: "https://www.geethanjaliinstitutions.com/engineering/training-and-placements.html"
+  utter_clubs:
+  - text: "GCET hosts several student clubs, including robotics, drama, music, sports,coding club and cultural clubs."
+
+  utter_fests:
+  - text: "GCET organizes various fests such as TechFest, Cultural Fest,VIBGYOR and Sports Fest. These events feature competitions, performances, and workshops."
+
+  utter_transport_facilities:
+  - text: "GCET provides transport facilities with a fleet of buses covering major routes in the city. The service is available for both students and staff."
+
+  utter_professor_details:
+  - text: "Professor {professor_name}, ID: {professor_id}, Contact: {professor_contact}, Teaches: {professor_subject}, Working as: {professor_position}"
+
+  utter_student_details:
+  - text: "Student {student_name}, ID: {student_id}, Department: {student_department}, Contact: {student_contact}, CGPA: {student_cgpa}, Email: {student_email}"
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

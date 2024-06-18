@@ -1,0 +1,124 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Express gcet
+  steps:
+  - intent: gcet
+  - action: utter_gcet
+
+- story: inquire about college hours
+  steps:
+  - intent: hours
+  - action: utter_hours
+
+- story: inquire about IT HOD
+  steps:
+  - intent: IT_HOD
+  - action: utter_IT_HOD
+
+- story: inquire about CSE HOD
+  steps:
+  - intent: CSE_HOD
+  - action: utter_CSE_HOD
+
+- story: inquire about college contact number
+  steps:
+  - intent: number_college
+  - action: utter_number_college
+
+- story: inquire about certifications
+  steps:
+  - intent: certification
+  - action: utter_certification
+
+- story: inquire about courses
+  steps:
+  - intent: courses
+  - action: utter_courses
+
+- story: inquire about admission process
+  steps:
+  - intent: admission_process
+  - action: utter_admission_process
+
+- story: inquire about fee structure
+  steps:
+  - intent: fee_structure
+  - action: utter_fee_structure
+
+- story: inquire about hostel facilities
+  steps:
+  - intent: hostel
+  - action: utter_hostel
+
+- story: inquire about library facilities
+  steps:
+  - intent: library
+  - action: utter_library
+
+- story: inquire about canteen facilities
+  steps:
+  - intent: canteen
+  - action: utter_canteen
+
+- story: inquire about placement opportunities
+  steps:
+  - intent: placement
+  - action: utter_placement
+
+- story: inquire about student clubs
+  steps:
+  - intent: clubs
+  - action: utter_clubs
+
+- story: inquire about college fests
+  steps:
+  - intent: fests
+  - action: utter_fests
+
+- story: inquire about transport facilities
+  steps:
+  - intent: transport_facilities
+  - action: utter_transport_facilities
+
+- story: Professor details
+  steps:
+  - intent: ask_professor_details
+    entities:
+      - professor_name: "Raheera"
+  - action: action_professor_details
+
+- story: Student details
+  steps:
+  - intent: ask_student_details
+    entities:
+      - student_name: "Lasya"
+  - action: action_student_details

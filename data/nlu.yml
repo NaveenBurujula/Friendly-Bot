@@ -1,0 +1,308 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: gcet
+  examples: |
+    - Tell me about gcet?
+    - give me information about gcet?
+    - history of gcet?
+
+- intent: hours
+  examples: |
+    - What are the college hours?
+    - When does the college open?
+    - What time does the college close?
+    - Can you tell me the college timings?
+    - What are the working hours of the college?
+    - What are the opening and closing times of the college?
+    - Is the college open on weekends?
+    - What is the schedule of the college?
+    - What are the college hours on weekdays?
+    - When is the college closed?
+
+- intent: IT_HOD
+  examples: |
+    - Who is the HOD of IT?
+    - Can you tell me the name of the IT HOD?
+    - Who heads the IT department?
+    - Who is the head of the IT department?
+    - Who is in charge of the IT department?
+    - Who is the IT HOD?
+    - Who is the head of IT?
+    - Who leads the IT department?
+    - Who is the current HOD of IT?
+    - Who manages the IT department?
+
+- intent: CSE_HOD
+  examples: |
+    - Who is the HOD of CSE?
+    - Can you tell me the name of the CSE HOD?
+    - Who heads the CSE department?
+    - Who is the head of the CSE department?
+    - Who is in charge of the CSE department?
+    - Who is the CSE HOD?
+    - Who is the head of CSE?
+    - Who leads the CSE department?
+    - Who is the current HOD of CSE?
+    - Who manages the CSE department?
+
+- intent: number_college
+  examples: |
+    - What is the contact number of the college?
+    - How can I contact the college?
+    - Can you provide the college phone number?
+    - What is the college's phone number?
+    - How do I reach the college by phone?
+    - Can you give me the college contact details?
+    - What is the official phone number of the college?
+    - How can I call the college?
+    - What number can I use to contact the college?
+    - Can you share the college telephone number?
+
+- intent: certification
+  examples: |
+    - Does the college offer certifications?
+    - What certifications are available?
+    - Can I get certified in any courses?
+    - Are there any certification programs?
+    - What certification courses does the college provide?
+    - Can I earn certificates at this college?
+    - Do you offer any professional certifications?
+    - What are the options for certification?
+    - Are certification courses available here?
+    - How can I get certified through the college?
+
+- intent: courses
+  examples: |
+    - What courses are offered by the college?
+    - Can you list the courses available?
+    - What programs are available at the college?
+    - What majors can I choose from?
+    - What academic programs are there?
+    - Can you tell me about the courses you offer?
+    - What subjects can I study here?
+    - What degrees can I pursue at this college?
+    - What fields of study are available?
+    - Can you provide a list of the courses offered?
+
+- intent: admission_process
+  examples: |
+    - How can I apply for admission?
+    - What is the admission process?
+    - Can you explain the admission procedure?
+    - How do I get admitted to the college?
+    - What steps do I need to take for admission?
+    - What is the process to apply for admission?
+    - Can you guide me on the admission process?
+    - How do I enroll in the college?
+    - What is required for admission?
+    - What are the criteria for admission?
+
+- intent: fee_structure
+  examples: |
+    - What is the fee structure?
+    - How much is the tuition fee?
+    - Can you tell me the fees for the courses?
+    - What are the college fees?
+    - How much does it cost to study here?
+    - What is the breakdown of the fees?
+    - Can you provide details about the fee structure?
+    - What are the tuition and other fees?
+    - What is the cost of attending the college?
+    - Can you explain the fee structure?
+
+- intent: hostel
+  examples: |
+    - Does the college have hostels?
+    - What are the hostel facilities?
+    - Can you tell me about the hostel accommodations?
+    - Are there hostel services available?
+    - What are the hostel options for students?
+    - Can you provide details about the hostels?
+    - Are there dormitories for students?
+    - What is the hostel fee?
+    - How can I apply for hostel accommodation?
+    - What amenities are available in the hostels?
+
+- intent: library
+  examples: |
+    - Can you tell me about the library?
+    - What are the library timings?
+    - What resources are available in the library?
+    - Is the library open to all students?
+    - What books can I find in the library?
+    - Are there study rooms in the library?
+    - What are the library hours?
+    - Can I access online resources through the library?
+    - How can I borrow books from the library?
+    - What facilities are available in the library?
+
+- intent: canteen
+  examples: |
+    - Does the college have a canteen?
+    - What are the canteen hours?
+    - What food options are available in the canteen?
+    - Can you tell me about the canteen facilities?
+    - Is there a cafeteria on campus?
+    - What meals are served in the canteen?
+    - What are the prices like in the canteen?
+    - Are there vegetarian options in the canteen?
+    - What is the canteen menu like?
+    - Are there any special dishes in the canteen?
+
+- intent: placement
+  examples: |
+    - What are the placement opportunities?
+    - Can you tell me about the placement cell?
+    - What companies visit for placements?
+    - How is the placement process conducted?
+    - What is the placement record of the college?
+    - Are there internship opportunities?
+    - What is the average package offered during placements?
+    - Can you provide details about the placement support?
+    - How successful are the placements?
+    - Who heads the placement cell?
+
+- intent: clubs
+  examples: |
+    - Are there any student clubs?
+    - What clubs can I join?
+    - Can you list the clubs available?
+    - What extracurricular clubs are there?
+    - What student organizations are active?
+    - Are there any cultural clubs?
+    - What are the options for joining clubs?
+    - Can you provide information about the clubs?
+    - What activities do the clubs offer?
+    - Are there any sports clubs?
+
+- intent: fests
+  examples: |
+    - What fests are organized by the college?
+    - Can you tell me about the college fests?
+    - What events are there during the fests?
+    - When are the college fests held?
+    - What cultural festivals does the college host?
+    - Are there any annual fests?
+    - Can you provide details about the fests?
+    - What is the schedule for the college fests?
+    - How can I participate in the fests?
+    - What are the main attractions of the college fests?
+
+- intent: transport_facilities
+  examples: |
+    - What transport facilities are available?
+    - Does the college provide transport?
+    - Can you tell me about the transport options?
+    - Are there any bus services for students?
+    - What are the transport arrangements?
+    - How can I commute to the college?
+    - Are there shuttle services available?
+    - What is the schedule for the college buses?
+    - How much does the transport service cost?
+
+- intent: ask_professor_details
+  examples: |
+    - Give me the details of Professor [Raheera](professor_name)
+    - What is the contact number of Professor [E Vijaya](professor_name)?
+    - Tell me about Professor [Dr.Sudhakar](professor_name).
+    - Tell me about professor [Pooja Prasad](professor_name).
+    -how can i contact professor [Dr.Swathi](professor_name).
+
+- intent: ask_student_details
+  examples: |
+    - How can I contact [Lasya](student_name)?
+    - What is the CGPA of student [P Reena](student_name)?
+    - Give me the details of [Nithin Yadav](student_name).
+    - Tell me the details of [Burujula Naveen](student_name)?
+    -what is the CGPA of [L Dhanya](student_name)?
+
